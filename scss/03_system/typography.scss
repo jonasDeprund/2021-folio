@@ -1,0 +1,75 @@
+////////
+////
+//// Typography
+////
+///////
+
+// Text-Large
+.text-large {
+  font-family: 'orelostandard_medium';
+  font-size: 10rem;
+  line-height: 11rem;
+  color: #ffffff;
+  grid-column: 1 / 13;
+  text-align: center;
+  width: 100%;
+}
+
+// Text-contact
+.text-large-white {
+  font-family: 'MarrSans';
+  font-weight: regular;
+  font-size: 3.4rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+
+// Text-medium
+.text-medium-black {
+  font-family: 'MarrSans';
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: #000000;
+}
+
+.text-medium-grey {
+  font-family: 'MarrSans';
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: #727683;
+}
+
+.text-medium-white {
+  font-family: 'MarrSans';
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: #ffffff;
+}
+
+//Text-Medium
+.text-small-black {
+  font-family: 'MarrSans';
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #000000;
+}
+
+.text-small-grey {
+  font-family: 'MarrSans';
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #727683;
+}
+
+.text-small-white {
+  font-family: 'MarrSans';
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+}
