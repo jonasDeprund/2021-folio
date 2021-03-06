@@ -5,17 +5,21 @@
 ///////
 
 @font-face {
-  font-family: 'MarrSans';
-  src: url('../fonts/MarrSans-SemiBold.woff2') format('woff2'),
-    url('../fonts/MarrSans-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
+  font-family: 'MarrSansRegular';
+  src: url('../fonts/MarrSansRegular.eot');
+  src: url('../fonts/MarrSansRegular.eot') format('embedded-opentype'),
+    url('../fonts/MarrSansRegular.woff2') format('woff2'),
+    url('../fonts/MarrSansRegular.woff') format('woff'),
+    url('../fonts/MarrSansRegular.ttf') format('truetype'),
+    url('../fonts/MarrSansRegular.svg#MarrSansRegular') format('svg');
 }
 
 @font-face {
-  font-family: 'MarrSans';
-  src: url('../fonts/MarrSans-Medium.woff2') format('woff2'),
-    url('../fonts/MarrSans-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
+  font-family: 'MarrSansMedium';
+  src: url('../fonts/MarrSansMedium.eot');
+  src: url('../fonts/MarrSansMedium.eot') format('embedded-opentype'),
+    url('../fonts/MarrSansMedium.woff2') format('woff2'),
+    url('../fonts/MarrSansMedium.woff') format('woff'),
+    url('../fonts/MarrSansMedium.ttf') format('truetype'),
+    url('../fonts/MarrSansMedium.svg#MarrSansMedium') format('svg');
 }
