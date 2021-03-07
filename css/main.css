@@ -71,6 +71,7 @@ html {
   display: grid;
   width: 144rem;
   min-width: 0;
+  width: 100%;
   padding-left: var(--grid-spacer);
   padding-right: var(--grid-spacer);
   -webkit-box-sizing: border-box;
@@ -252,17 +253,23 @@ body {
   height: 100vh;
   overflow: hidden; }
 
-.link {
-  cursor: pointer; }
+a.link {
+  pointer-events: auto;
+  z-index: 9999;
+  display: inline;
+  transition: all 200ms ease-in-out; }
 
-.link:hover {
-  cursor: pointer;
+a:hover.link {
+  pointer-events: auto;
   color: var(--color-tertiary); }
+
+.link-behance {
+  margin-left: 1.6rem; }
 
 .js .loading::before {
   content: '';
   position: fixed;
-  z-index: 100000;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
@@ -272,7 +279,7 @@ body {
 .js .loading::after {
   content: '';
   position: fixed;
-  z-index: 100000;
+  z-index: 1000;
   top: 50%;
   left: 50%;
   width: 60px;
@@ -292,7 +299,8 @@ body {
 .frame {
   position: absolute;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  pointer-events: none; }
 
 .content {
   position: relative;
@@ -302,10 +310,8 @@ body {
   isolation: isolate; }
 
 .content__img {
-  max-width: var(--img-maxwidth);
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  will-change: transform;
-  filter: var(--filter-img); }
+  will-change: transform; }
