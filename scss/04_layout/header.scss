@@ -24,29 +24,32 @@ body {
 .credit {
   text-align: right;
 }
-.content {
-  height: 100vh;
-  overflow: hidden;
+
+.front {
+  z-index: 99;
 }
+
 a.link {
   pointer-events: auto;
-  z-index: 9999;
+  z-index: 99;
   display: inline;
   transition: all 200ms ease-in-out;
 }
 a:hover.link {
+  z-index: 99;
   pointer-events: auto;
   color: var(--color-tertiary);
 }
 
 .link-behance {
+  z-index: 99;
   margin-left: 1.6rem;
 }
 //@at-root
 .js .loading::before {
   content: '';
   position: fixed;
-  z-index: 1000;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -57,7 +60,7 @@ a:hover.link {
 .js .loading::after {
   content: '';
   position: fixed;
-  z-index: 1000;
+  z-index: 1;
   top: 50%;
   left: 50%;
   width: 60px;
@@ -72,27 +75,32 @@ a:hover.link {
 
 @keyframes loaderAnim {
   to {
+    z-index: 1;
     opacity: 1;
     transform: scale3d(0.5, 0.5, 1);
   }
 }
 
 .frame {
+  z-index: 1;
   position: absolute;
   width: 100vw;
   height: 100vh;
+  top: 0;
+  left: 0;
   pointer-events: none;
 }
 
 .content {
+  z-index: 1;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  isolation: isolate;
 }
 
 .content__img {
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
