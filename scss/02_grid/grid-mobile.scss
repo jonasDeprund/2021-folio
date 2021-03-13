@@ -7,8 +7,8 @@
 @media only screen and (max-width: 767px) {
   :root {
     --grid-columns: 12;
-    --grid-gutter: 2rem;
-    --grid-spacer: 5rem;
+    --grid-gutter: 1rem;
+    --grid-spacer: 1.5rem;
   }
   .cell-start-0-m {
     grid-column-start: 1 !important;
@@ -126,26 +126,5 @@
   }
   .cell-12-m {
     grid-column: span 12 !important;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .row--break-tl {
-    grid-template-columns: 1fr;
-    grid-column-gap: 0;
-  }
-  .row--break-tl [class*='cell'] {
-    grid-column: span 12;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .row--break-tp {
-    grid-template-columns: 1fr;
-    grid-column-gap: 0;
-  }
-  .row--break-tp > [class*='cell'] {
-    grid-column: span 12;
-    grid-column: span 12 !important;
-    grid-column-start: 1 !important;
-    grid-column-end: 13 !important;
   }
 }

@@ -256,15 +256,6 @@
     grid-column: span 12 !important;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .row--break-tl {
-    grid-template-columns: 1fr;
-    grid-column-gap: 0;
-  }
-  .row--break-tl [class*='cell'] {
-    grid-column: span 12;
-  }
-}
 @media only screen and (max-width: 768px) {
   .row--break-tp {
     grid-template-columns: 1fr;
